@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <title>Modelo 3D Interactivo con Three.js</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="assets/css/main.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">3D Animation Viewer</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="info">
+      <h2 style="margin-bottom: 15px; font-weight: 300; letter-spacing: 2px;">3D Animation Explorer</h2>
+      <p>Press <strong>1-5</strong> to change animations</p>
+      <p style="font-size: 11px; margin-top: 10px;">
+        Powered by <a href="https://threejs.org" target="_blank" rel="noopener">three.js</a> | 
+        Models from <a href="https://www.mixamo.com/" target="_blank" rel="noopener">Mixamo</a>
+      </p>
+    </div>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "./assets/build/three.module.js",
+          "three/addons/": "./assets/jsm/"
+        }
+      }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="assets/js/main.js"></script>
+  </body>
+</html>
